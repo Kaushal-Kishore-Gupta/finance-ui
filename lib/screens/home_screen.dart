@@ -86,13 +86,14 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Flexible(
+              child: SizedBox(
+                height:  MediaQuery.of(context).size.height * 0.25,
                 child: GridView.builder(
                   shrinkWrap: true,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     childAspectRatio: 1.8,
-                    crossAxisSpacing: 0
+                    crossAxisSpacing: 0,
                   ),
                   itemCount: 4,
                   itemBuilder: (context, index) {
@@ -141,7 +142,8 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Flexible(
+              child: SizedBox(
+                height:  MediaQuery.of(context).size.height * 0.25,
                 child: GridView.builder(
                   shrinkWrap: true,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
